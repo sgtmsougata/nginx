@@ -1,0 +1,9 @@
+version: 3
+services:
+ nginx:
+  container_name: nginx_p
+  image: nginx:alpine
+  ports:
+  - "80:80"
+  volumes:
+  - ./nginx-data/html:/usr/share/nginx/html
